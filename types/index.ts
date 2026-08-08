@@ -4,7 +4,7 @@
  * et facilite le branchement futur d'une vraie API (Tebex ou custom).
  */
 
-export type ProductCategory = "vip" | "vehicules" | "suncoins" | "packs" | "grades";
+export type ProductCategory = "Abonnement" | "suncoins";
 
 export interface Product {
   /** Identifiant unique, utilisé comme clé et comme référence panier/API */
@@ -22,6 +22,13 @@ export interface Product {
   badge?: string;
   /** Dégradé Tailwind utilisé pour l'illustration de la carte */
   gradient: string;
+   /**
+   * URL de checkout Tebex (ou custom) pour ce produit précis.
+   * Ex: "https://sunlight-fa.tebex.store/"
+   * Tant qu'elle n'est pas renseignée, le bouton "Acheter" affiche
+   * un message d'attente au lieu de rediriger vers nulle part.
+   */
+  tebexUrl?: string;
 }
 
 export interface Testimonial {
@@ -33,9 +40,6 @@ export interface Testimonial {
 }
 
 export const CATEGORY_LABELS: Record<ProductCategory, string> = {
-  vip: "Grades VIP",
-  vehicules: "Véhicules",
+  vip: "Abonnement",
   suncoins: "SunCoins",
-  packs: "Packs",
-  grades: "Grades RP",
 };
