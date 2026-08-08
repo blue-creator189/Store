@@ -9,11 +9,18 @@ export function cn(...classes: Array<string | false | null | undefined>): string
 /**
  * Formate un prix en euros avec la locale française.
  */
-export function formatPrice(value: number): string {
+export function formatEuros(value: number): string {
   return new Intl.NumberFormat("fr-FR", {
     style: "currency",
     currency: "EUR",
   }).format(value);
+}
+
+export function formatPrice(value: number, currency: "EUR" | "SUNCOINS" = "EUR"): string {
+  if (currency === "SUNCOINS") {
+    return `${value.toLocaleString("fr-FR")} SunCoins`;
+  }
+  return formatEuros(value);
 }
 
 /**
