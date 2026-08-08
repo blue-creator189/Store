@@ -1,0 +1,102 @@
+import { Product } from "@/types";
+
+/**
+ * Catalogue de démonstration.
+ * À terme, ce tableau sera remplacé par un appel à l'API Tebex (ou custom)
+ * dans lib/api.ts — voir le README pour le point de branchement prévu.
+ */
+export const products: Product[] = [
+  {
+    id: "vip-glacier",
+    name: "Grade VIP Glacier",
+    description: "Accès prioritaire au serveur, file d'attente réduite et tag distinctif en jeu.",
+    price: 9.99,
+    category: "vip",
+    featured: true,
+    badge: "Populaire",
+    gradient: "from-sun-frost to-sun-azure",
+  },
+  {
+    id: "vip-aurora",
+    name: "Grade VIP Aurora",
+    description: "Tous les avantages Glacier, plus 2 slots de véhicules et un skin de tag exclusif.",
+    price: 19.99,
+    oldPrice: 24.99,
+    category: "vip",
+    featured: true,
+    badge: "Meilleure offre",
+    gradient: "from-sun-azure to-sun-violet",
+  },
+  {
+    id: "vehicule-spectre",
+    name: "Véhicule — Spectre RS",
+    description: "Véhicule performance débloqué instantanément dans votre garage personnel.",
+    price: 14.99,
+    category: "vehicules",
+    featured: true,
+    gradient: "from-sun-sky to-sun-deep",
+  },
+  {
+    id: "vehicule-aegis",
+    name: "Véhicule — Aegis 4x4",
+    description: "Tout-terrain robuste, idéal pour le RP utilitaire et les interventions.",
+    price: 12.99,
+    category: "vehicules",
+    gradient: "from-sun-deep to-sun-violet",
+  },
+  {
+    id: "suncoins-500",
+    name: "500 SunCoins",
+    description: "Monnaie du serveur utilisable dans toutes les boutiques in-game.",
+    price: 4.99,
+    category: "suncoins",
+    gradient: "from-sun-ice to-sun-frost",
+  },
+  {
+    id: "suncoins-1500",
+    name: "1500 SunCoins",
+    description: "Pack économique : 20% de bonus par rapport à l'achat unitaire.",
+    price: 12.99,
+    oldPrice: 15.99,
+    category: "suncoins",
+    featured: true,
+    badge: "+20% bonus",
+    gradient: "from-sun-frost to-sun-sky",
+  },
+  {
+    id: "pack-starter",
+    name: "Pack Starter RP",
+    description: "De quoi bien démarrer : tenue, outils de métier et un peu de SunCoins.",
+    price: 7.99,
+    category: "packs",
+    gradient: "from-sun-sky to-sun-azure",
+  },
+  {
+    id: "pack-premium",
+    name: "Pack Premium",
+    description: "Le pack complet : VIP Aurora, véhicule Spectre RS et 1000 SunCoins.",
+    price: 39.99,
+    oldPrice: 49.99,
+    category: "packs",
+    featured: true,
+    badge: "Pack complet",
+    gradient: "from-sun-azure to-sun-violet",
+  },
+  {
+    id: "grade-entrepreneur",
+    name: "Grade Entrepreneur",
+    description: "Débloque la création d'entreprise RP et les slots employés associés.",
+    price: 17.99,
+    category: "grades",
+    gradient: "from-sun-frost to-sun-violet",
+  },
+  {
+    id: "grade-legende",
+    name: "Grade Légende",
+    description: "Statut ultime : accès à tous les métiers, garage étendu et support prioritaire.",
+    price: 29.99,
+    category: "grades",
+    badge: "Exclusif",
+    gradient: "from-sun-ice via-sun-sky to-sun-violet",
+  },
+];

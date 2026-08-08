@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #05070a;
+  color: #eaf6ff;
+}
+
+body {
+  /* Ambiance lumineuse bleue en fond de page, discrète et fixe */
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(77, 166, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(124, 124, 255, 0.1), transparent 45%),
+    radial-gradient(circle at 50% 100%, rgba(77, 166, 255, 0.08), transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Curseur natif masqué sur desktop : remplacé par CustomCursor */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a,
+  button,
+  input,
+  [role="button"] {
+    cursor: none;
+  }
+}
+
+/* Scrollbar fine et lumineuse, cohérente avec l'identité */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #05070a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4da6ff, #7c7cff);
+  border-radius: 999px;
+  border: 2px solid #05070a;
+}
+
+/* Focus clavier toujours visible, même avec le curseur custom */
+:focus-visible {
+  outline: 2px solid #7ccbff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #eaf6ff 0%, #7ccbff 50%, #7c7cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: rgba(11, 15, 23, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 203, 255, 0.12);
+}
+
+/* Respect des préférences de réduction de mouvement */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
