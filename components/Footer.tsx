@@ -14,8 +14,8 @@ const FOOTER_LINKS = [
     title: "Communauté",
     links: [
       { label: "Discord", href: "https://discord.gg/sunlight" },
-      { label: "Règlement", href: "#" },
-      { label: "Support", href: "#" },
+      { label: "Règlement", href: "https://wiki.sunlightfa.dev/" },
+      { label: "Support", href: "https://discord.com/channels/1525844654170443887/1525844657454583877" },
     ],
   },
   {
