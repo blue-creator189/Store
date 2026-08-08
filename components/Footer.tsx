@@ -13,7 +13,7 @@ const FOOTER_LINKS = [
   {
     title: "Communauté",
     links: [
-      { label: "Discord", href: "https://discord.gg/" },
+      { label: "Discord", href: "https://discord.gg/sunlight" },
       { label: "Règlement", href: "#" },
       { label: "Support", href: "#" },
     ],
