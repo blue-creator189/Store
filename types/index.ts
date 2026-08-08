@@ -1,3 +1,4 @@
+export type Currency = "EUR" | "SUNCOINS"
 export type ProductCategory = "vip" | "vehicules" | "suncoins" | "packs" | "grades";
 
 export interface Product {
@@ -6,6 +7,7 @@ export interface Product {
   description: string;
   price: number;
   oldPrice?: number;
+  currency?: Currency;
   category: ProductCategory;
   featured?: boolean;
   badge?: string;
