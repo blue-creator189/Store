@@ -24,10 +24,18 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 }
 
 /**
- * Point d'entrée pour déclencher un paiement.
- * À connecter au checkout Tebex (redirection) ou à un système custom (Stripe...).
+ * Déclenche l'achat d'un produit.
+ * Si le produit a un `tebexUrl` renseigné (voir data/products.ts), on ouvre
+ * la page de checkout Tebex dans un nouvel onglet. Sinon, on prévient
+ * simplement que le lien n'est pas encore configuré, plutôt que de rediriger
+ * vers nulle part.
  */
 export function checkout(productId: string): void {
   // Exemple futur : window.location.href = `https://checkout.tebex.io/checkout/${productId}`;
   console.info(`[checkout] Achat demandé pour le produit : ${productId}`);
+}
+
+window.alert(
+  `Le lien de paiement pour "${product.name}" n'est pas encore configuré. Ajoute son tebexUrl dans data/products.ts.`
+  );
 }
