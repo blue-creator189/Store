@@ -6,8 +6,8 @@ import { ChevronDown, Users, ShieldCheck, Sparkles } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
 
 const STATS = [
-  { icon: Users, value: 12480, suffix: "+", label: "joueurs soutiens" },
-  { icon: ShieldCheck, value: 3200, suffix: "+", label: "grades VIP actifs" },
+  { icon: Users, value: 50, suffix: "+", label: "joueurs soutiens" },
+  { icon: ShieldCheck, value: 20, suffix: "+", label: "grades VIP actifs" },
   { icon: Sparkles, value: 98, suffix: "%", label: "satisfaction" },
 ];
 
