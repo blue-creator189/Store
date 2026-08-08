@@ -8,14 +8,9 @@ import { products } from "@/data/products";
  * Demain : remplacer le corps de ces fonctions par de vrais appels à
  * l'API Tebex (https://docs.tebex.io) ou à une API de paiement custom,
  * sans rien changer dans les composants qui les consomment.
- *
- * Exemple d'intégration Tebex (à adapter) :
- *   const res = await fetch(`https://headless.tebex.io/api/accounts/${WEBSTORE_TOKEN}/categories`);
- *   const data = await res.json();
  */
 
 export async function getProducts(): Promise<Product[]> {
-  // Simule un appel réseau asynchrone pour garder la même signature qu'un futur fetch()
   return Promise.resolve(products);
 }
 
@@ -24,18 +19,18 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 }
 
 /**
- * Déclenche l'achat d'un produit.
- * Si le produit a un `tebexUrl` renseigné (voir data/products.ts), on ouvre
- * la page de checkout Tebex dans un nouvel onglet. Sinon, on prévient
- * simplement que le lien n'est pas encore configuré, plutôt que de rediriger
- * vers nulle part.
+ * Declenche l'achat d'un produit.
+ * Si le produit a un tebexUrl renseigne (voir data/products.ts), on ouvre
+ * la page de checkout Tebex dans un nouvel onglet. Sinon, on previent
+ * simplement que le lien n'est pas encore configure.
  */
-export function checkout(productId: string): void {
-  // Exemple futur : window.location.href = `https://checkout.tebex.io/checkout/${productId}`;
-  console.info(`[checkout] Achat demandé pour le produit : ${productId}`);
-}
+export function checkout(product: Product): void {
+  if (product.tebexUrl) {
+    window.open(product.tebexUrl, "_blank", "noopener,noreferrer");
+    return;
+  }
 
-window.alert(
-  `Le lien de paiement pour "${product.name}" n'est pas encore configuré. Ajoute son tebexUrl dans data/products.ts.`
-  );
+  const message =
+    "Le lien de paiement pour " + product.name + " n'est pas encore configure. Ajoute son tebexUrl dans data/products.ts.";
+  window.alert(message);
 }
