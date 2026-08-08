@@ -76,11 +76,11 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
       <div className="mt-5 flex items-center justify-between">
         <div className="flex items-baseline gap-2">
           <span className="font-display text-xl font-bold text-sun-ice">
-            {formatPrice(product.price)}
+            {formatPrice(product.price, product.currency)}
           </span>
           {product.oldPrice && (
             <span className="text-sm text-sun-frost/40 line-through">
-              {formatPrice(product.oldPrice)}
+              {formatPrice(product.oldPrice, product.currency)}
             </span>
           )}
         </div>
