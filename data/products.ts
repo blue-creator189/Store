@@ -15,6 +15,7 @@ export const products: Product[] = [
     featured: true,
     badge: "Pour débuter",
     gradient: "from-sun-frost to-sun-azure",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/abonnement",
   },
   {
     id: "vip+",
@@ -25,6 +26,7 @@ export const products: Product[] = [
     featured: true,
     badge: "Meilleure offre",
     gradient: "from-sun-azure to-sun-violet",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/abonnement",
   },
   {
     id: "mvp",
@@ -35,6 +37,7 @@ export const products: Product[] = [
     featured: true,
     badge: "Populaire",
     gradient: "from-sun-sky to-sun-deep",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/abonnement",
   },
   {
     id: "elite",
@@ -45,6 +48,7 @@ export const products: Product[] = [
     featured: true,
     badge: "A découvrir",
     gradient: "from-sun-deep to-sun-violet",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/abonnement",
   },
   {
     id: "prestige",
@@ -54,6 +58,7 @@ export const products: Product[] = [
     category: "vip",
     featured: true,
     gradient: "from-sun-deep to-sun-violet",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/abonnement",
   },
   {
     id: "suncoins-1000",
@@ -62,6 +67,7 @@ export const products: Product[] = [
     price: 8.99,
     category: "suncoins",
     gradient: "from-sun-ice to-sun-frost",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
   {
     id: "suncoins-2800",
@@ -71,6 +77,7 @@ export const products: Product[] = [
     category: "suncoins",
     featured: true,
     gradient: "from-sun-frost to-sun-sky",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
   {
     id: "suncoins-5000",
@@ -80,6 +87,7 @@ export const products: Product[] = [
     category: "suncoins",
     featured: true,
     gradient: "from-sun-sky to-sun-azure",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
   {
     id: "suncoins-13200",
@@ -89,6 +97,7 @@ export const products: Product[] = [
     category: "suncoins",
     featured: true,
     gradient: "from-sun-azure to-sun-violet",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
   {
     id: "suncoins-30000",
@@ -98,5 +107,6 @@ export const products: Product[] = [
     category: "suncoins",
     featured: true,
     gradient: "from-sun-frost to-sun-violet",
+    tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
 ];
