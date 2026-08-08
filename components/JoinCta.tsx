@@ -23,7 +23,7 @@ export default function JoinCta() {
         </p>
 
         <a
-          href="https://discord.gg/"
+          href="https://discord.gg/sunlight"
           target="_blank"
           rel="noopener noreferrer"
           className="relative mt-8 inline-block rounded-full bg-sun-gradient px-8 py-3 font-semibold text-sun-void shadow-glow transition-transform hover:scale-105"
