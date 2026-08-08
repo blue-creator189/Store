@@ -10,6 +10,7 @@ export interface Product {
   featured?: boolean;
   badge?: string;
   gradient: string;
+  image?: string;
   tebexUrl?: string;
 }
 
