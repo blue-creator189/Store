@@ -64,7 +64,7 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
         </div>
 
         <button
-          onClick={() => checkout(product.id)}
+          onClick={() => checkout(product)}
           aria-label={`Acheter ${product.name}`}
           className="flex items-center gap-2 rounded-full bg-sun-line px-4 py-2 text-sm font-medium text-sun-ice transition-colors group-hover:bg-sun-gradient group-hover:text-sun-void"
         >
