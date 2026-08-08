@@ -5,6 +5,7 @@ import { ShoppingCart } from "lucide-react";
 import { Product, CATEGORY_LABELS } from "@/types";
 import { formatPrice, cn } from "@/lib/utils";
 import { checkout } from "@/lib/api";
+import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -36,7 +37,28 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
         </span>
       )}
 
-      {/* Illustration abstraite dérivée du dégradé du logo (pas d'images produit factices) */}
+     <div className="relative mb-4 h-28 overflow-hidden rounded-xl">
+  {product.image ? (
+    <Image
+      src={product.image}
+      alt={product.name}
+      fill
+      sizes="(max-width: 768px) 100vw, 320px"
+      className="object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+  ) : (
+    <div
+      className={cn(
+        "flex h-full w-full items-center justify-center bg-gradient-to-br opacity-90 transition-opacity group-hover:opacity-100",
+        product.gradient
+      )}
+    >
+      <span className="font-display text-xs uppercase tracking-[0.25em] text-sun-void/70">
+        {CATEGORY_LABELS[product.category]}
+      </span>
+    </div>
+  )}
+</div>
       <div
         className={cn(
           "mb-4 flex h-28 items-center justify-center rounded-xl bg-gradient-to-br opacity-90 transition-opacity group-hover:opacity-100",
