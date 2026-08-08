@@ -109,4 +109,13 @@ export const products: Product[] = [
     gradient: "from-sun-frost to-sun-violet",
     tebexUrl: "https://sunlight-fa.tebex.store/category/suncoin",
   },
+  {
+    id: "sentinel-gts",
+    name: "Sentinel GTS",
+    description: "L'élégance au service de la performance. Avec son design raffiné, son confort premium et sa puissance maîtrisée, elle incarne le luxe moderne. Ce véhicule s'achète uniquement via la boutique IG au prix de 3800 SunCoins !",
+    category: "vehicule",
+    featured: true,
+    gradient: "from-sun-frost to-sun-violet",
+    image: "/products/GTS.png",
+  },
 ];
