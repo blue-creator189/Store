@@ -21,13 +21,13 @@ const bodyFont = Inter({
 export const metadata: Metadata = {
   title: "Sunlight FA — Boutique officielle",
   description:
-    "Boutique officielle du serveur FiveM Sunlight FA : grades VIP, véhicules, SunCoins et packs premium, livrés instantanément en jeu.",
+    "Boutique officielle de Sunlight FA : Abonnement, véhicules, SunCoins et packs premium, livrés en jeu.",
   keywords: ["Sunlight FA", "FiveM", "GTA RP", "boutique", "serveur RP"],
   metadataBase: new URL("https://sunlightfa.dev"),
   openGraph: {
     title: "Sunlight FA — Boutique officielle",
     description:
-      "Grades VIP, véhicules, SunCoins et packs premium pour le serveur FiveM Sunlight FA.",
+      "Abonnement, véhicules, SunCoins et packs premium pour le serveur FiveM Sunlight FA.",
     url: "https://sunlightfa.dev",
     siteName: "Sunlight FA",
     locale: "fr_FR",
