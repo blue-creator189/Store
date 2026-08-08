@@ -24,7 +24,7 @@ export interface Product {
   gradient: string;
    /**
    * URL de checkout Tebex (ou custom) pour ce produit précis.
-   * Ex: "https://sunlight-fa.tebex.store/"
+   * Ex: "https://ton-store.tebex.io/package/1234567"
    * Tant qu'elle n'est pas renseignée, le bouton "Acheter" affiche
    * un message d'attente au lieu de rediriger vers nulle part.
    */
