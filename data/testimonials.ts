@@ -7,32 +7,32 @@ import { Testimonial } from "@/types";
 export const testimonials: Testimonial[] = [
   {
     id: "t1",
-    name: "Lucas M.",
-    role: "Joueur depuis 8 mois",
+    name: "m1k2",
+    role: "Nouveau joueur",
     message:
-      "Le grade VIP Aurora vaut vraiment le coup, la file d'attente n'existe plus pour moi. Support réactif en plus.",
+      "Le Prestige vaut vraiment le coup, la file d'attente n'existe plus pour moi. Support réactif en plus.",
     rating: 5,
   },
   {
     id: "t2",
-    name: "Chloé D.",
-    role: "Entrepreneuse RP",
+    name: "Flo",
+    role: "Entrepreneur RP",
     message:
-      "Pack Premium acheté le mois dernier, livraison instantanée in-game. Le staff est hyper à l'écoute.",
-    rating: 5,
-  },
-  {
-    id: "t3",
-    name: "Nathan R.",
-    role: "Joueur régulier",
-    message:
-      "Bon rapport qualité/prix sur les SunCoins, et l'ambiance générale du serveur est top.",
+      "MVP acheté ce mois ci, livraison instantanée in-game. Le staff est hyper à l'écoute.",
     rating: 4,
   },
   {
+    id: "t3",
+    name: "Mouse",
+    role: "Joueur régulier",
+    message:
+      "Bon rapport qualité/prix sur les SunCoins, et l'ambiance générale du serveur est top.",
+    rating: 5,
+  },
+  {
     id: "t4",
-    name: "Emma L.",
-    role: "Membre du staff RP",
+    name: "Catalina",
+    role: "Membre du staff",
     message:
       "Boutique claire, paiement simple, aucun souci depuis que je suis sur Sunlight FA.",
     rating: 5,
