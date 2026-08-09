@@ -249,6 +249,6 @@ export const products: Product[] = [
     featured: true,
     badge: "Boutique Journalière",
     gradient: "from-sun-frost to-sun-violet",
-    image: "/products/domle.png",
+    image: "/products/domle.jpg",
   },
 ];
