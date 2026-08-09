@@ -200,17 +200,6 @@ export const products: Product[] = [
     image: "/products/tr3s.png",
   },
   {
-    id: "progen-tr3-s",
-    name: "Progen TR3-S",
-    description: "Une supercar pensée pour les passionnés de vitesse. Avec son design affûté, ses lignes agressives et ses performances à couper le souffle. Ce véhicule s'achète uniquement via la boutique IG au prix de 3500 SunCoins !",
-    price: 3500, currency: "SUNCOINS",
-    category: "vehicules",
-    featured: true,
-    badge: "Boutique Journalière",
-    gradient: "from-sun-frost to-sun-violet",
-    image: "/products/tr3s.png",
-  },
-  {
     id: "prospero",
     name: "Prospero",
     description: "La Prospero est une supercar au design radical, conçue pour offrir des performances d'exception. Avec sa silhouette basse, ses lignes acérées, ses prises d'air imposantes et ses jantes grand diamètre, elle allie puissance, aérodynamisme et exclusivité dans un style résolument sportif. Ce véhicule s'achète uniquement via la boutique IG au prix de 4000 SunCoins !",
