@@ -119,4 +119,14 @@ export const products: Product[] = [
     gradient: "from-sun-frost to-sun-violet",
     image: "/products/GTS.png",
   },
+  {
+    id: "club-xr",
+    name: "Club XR",
+    description: "La Club XR est une compacte moderne conçue pour offrir un parfait équilibre entre efficacité, confort et dynamisme. Avec son design épuré, sa silhouette élégante et ses équipements modernes, elle se distingue par son agilité, sa faible consommation et sa polyvalence, idéale aussi bien pour la ville que pour les longs trajets. Ce véhicule s'achète uniquement via la boutique IG au prix de 1800 SunCoins !",
+    price: 1800, currency: "SUNCOINS",
+    category: "vehicules",
+    featured: true,
+    gradient: "from-sun-frost to-sun-violet",
+    image: "/products/clubxr.png",
+  },
 ];
